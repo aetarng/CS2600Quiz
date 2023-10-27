@@ -43,11 +43,11 @@ PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char *
 } 
 
 // Function to search employee by phone number
-PtrToEmployee searchEmployeeByPhoneNumber(PtrToConstEmployee ptr, int tableSize, long targetPhoneNumber) {
+PtrToEmployee searchEmployeeByPhoneNumber(PtrToConstEmployee ptr, int tableSize, char * targetPhoneNumber) {
     const PtrToConstEmployee endPtr = ptr + tableSize;
 
     for (; ptr < endPtr; ptr++) {
-        if (ptr->phone == targetPhoneNumber)
+        if (strcmp(ptr->phone,targetPhoneNumber) == 0)
             return (PtrToEmployee)ptr;
     }
 
