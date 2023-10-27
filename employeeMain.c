@@ -20,7 +20,7 @@ int main(void){
 
     PtrToEmployee searchEmployeeByName(const Employee table[], int sizeTable, char * nameToFind); 
 
-    PtrToEmployee searchEmployeeByPhoneNumber(const Employee table[], int sizeTable, char phoneNumberToFind);
+    PtrToEmployee searchEmployeeByPhoneNumber(const Employee table[], int sizeTable, char * phoneNumberToFind);
 
     PtrToEmployee searchEmployeeBySalary(const Employee tablep[], int sizeTable, double salaryToFind);
 

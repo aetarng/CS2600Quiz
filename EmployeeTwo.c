@@ -57,7 +57,7 @@ static int compareEmployeeName(const void *targetPtr, PtrToConstEmployee tableVa
 }
 
 static int compareEmployeePhoneNumber(const void *targetPtr, PtrToConstEmployee tableValuePtr) {
-    return *(long *)targetPtr != tableValuePtr->phone;
+    return strcmp((char *)targetPtr, tableValuePtr->phone);
 }
 
 static int compareEmployeeSalary(const void *targetPtr, PtrToConstEmployee tableValuePtr) {
